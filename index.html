@@ -1,1175 +1,809 @@
-<html><head>
-	<title>LegnanoCoin</title>
-	<script src="lib/intersection-observer/intersection-observer.js"></script>
-		<style>
-			
+<html lang="en-US" class="js_active  vc_desktop  vc_transform  vc_transform skrollr skrollr-desktop"><head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			@keyframes wipe-enter {
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
+	<title>Nanotecna</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Cryptoking - Bitcoin &amp; ICO Dark » Feed" href="https://klbtheme.com/cryptoking/dark/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cryptoking - Bitcoin &amp; ICO Dark » Comments Feed" href="https://klbtheme.com/cryptoking/dark/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/klbtheme.com\/cryptoking\/dark\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://klbtheme.com/cryptoking/dark/wp-includes/js/wp-emoji-release.min.js?ver=5.8.1" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
-	    .fade-in {
-  width: auto;
-  height: auto;
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://klbtheme.com/cryptoking/dark/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="https://klbtheme.com/cryptoking/dark/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.2" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/bootstrap/css/bootstrap.min.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/css/animate.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="ionicons-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/css/ionicons.min.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/owlcarousel/css/owl.carousel.min.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="owl-theme-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/owlcarousel/css/owl.theme.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/css/magnific-popup.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="cryptoking-custom-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/css/custom.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="cryptoking-responsive-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/css/responsive.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="cryptoking-theme-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/color/theme.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="cryptoking-font-css" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="cryptoking-style-css" href="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/style.css?ver=5.8.1" type="text/css" media="all">
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://klbtheme.com/cryptoking/dark/wp-json/"><link rel="alternate" type="application/json" href="https://klbtheme.com/cryptoking/dark/wp-json/wp/v2/pages/378"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://klbtheme.com/cryptoking/dark/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://klbtheme.com/cryptoking/dark/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.1">
+<link rel="canonical" href="https://klbtheme.com/cryptoking/dark/">
+<link rel="shortlink" href="https://klbtheme.com/cryptoking/dark/">
+<link rel="alternate" type="application/json+oembed" href="https://klbtheme.com/cryptoking/dark/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fklbtheme.com%2Fcryptoking%2Fdark%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://klbtheme.com/cryptoking/dark/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fklbtheme.com%2Fcryptoking%2Fdark%2F&amp;format=xml">
+
+<style type="text/css">
+
  
+body{ 
+;
+;
+;
+;
+ ;
+ ;
+ ;
+ ;
+ ;
+ ;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .fade-in-animation {
-    animation: wipe-enter 1s 1;
-  }
+
+
+ 
+h1{ 
+;
+;
+;
+;
+ ;
+ ;
+ ;
+ ;
+ ;
+ ;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .fade-in-animationtext {
-    animation: wipe-enter 3s 1;
-  }
+
+
+
+ 
+h2{ 
+;
+;
+;
+;
+ ;
+ ;
+ ;
+ ;
+ ;
+ ;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .fade-in-animationtext2 {
-    animation: wipe-enter 5s 1;
-  }
+
+
+ 
+h3{ 
+;
+;
+;
+;
+ ;
+ ;
+ ;
+ ;
+ ;
+ ;
 }
-			@media only screen and (min-width: 1001px) {
-				.topnav{
-				display: none;
-				}
-						body{
-		font-family: Arial, sans-serif;
-		background-image: url(sfondord.png);
-		background-size: 100%;
-		}
-			div.row-left-socials{
-			width: 70%;
-			height: 75px;
-			background-color: rgb(0,0,0,0.70)
-			}
-			div.row-right-socials{
-			width: 30%;
-			height: 75px;
-			background-color: rgb(0,0,0,0.70)
-			}
-			img.icon{
-			width: 50px;
-			height: 50px;
-			}
-			}
-			@media only screen and (max-width: 1000px) {
-				ul#socials {
-					    margin-left: 28%;
-					}
+
+
+ 
+h4{ 
+;
+;
+;
+;
+ ;
+ ;
+ ;
+ ;
+ ;
+ ;
+}
+
+
+ 
+h5{ 
+;
+;
+;
+;
+ ;
+ ;
+ ;
+ ;
+ ;
+ ;
+}
+
+
+ 
+h6{ 
+;
+;
+;
+;
+ ;
+ ;
+ ;
+ ;
+ ;
+ ;
+}
+
+
+ 
+p{ 
+;
+;
+;
+;
+ ;
+ ;
+ ;
+ ;
+ ;
+ ;
+}
+
+header .navbar-brand img {
+    width: 223px;
+}
+
+.nav-fixed, header.active, .dropdown-menu {
+    background-color: #0F3E97;
+}
+
+.bottom_footer {
+    background-color: #0a1c5d;
+}
+
+
+.btn,
+button,
+.btn-default,
+.gradient_box,
+.roadmap.gradient_box:before,
+.roadmap.gradient_box:before,
+.roadmap_icon.icon_gradient_box::before,
+.newsletter_form .outline_input,
+.progress-bar {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%, rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+
+.btn-default::before,
+.btn-default.active.focus, 
+.btn-default.active:focus, 
+.btn-default.active:hover, 
+.btn-default:active:focus, 
+.btn-default:active:hover,
+.btn-default.active,
+.btn-default:active,
+.btn-default.focus:active, 
+.btn-default:focus,
+.btn.active:not(:disabled):not(.disabled), 
+.btn:active:not(:disabled):not(.disabled),
+.social_team a::before {
+	background: -webkit-linear-gradient(left, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+    background: linear-gradient(to right, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+}
+
+.gradient_box.roadmap_inner::after,
+.gradient_box.roadmap_inner::before  {
+	background: -webkit-linear-gradient(top, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to bottom, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+button {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.default {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.btn {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.btn-default {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.btn-default.active.focus, 
+.btn-default.active:focus, 
+.btn-default.active:hover, 
+.btn-default:active:focus, 
+.btn-default:active:hover,
+.btn-default.active,
+.btn-default:active,
+.btn-default.focus:active, 
+.btn-default:focus,
+.btn.active:not(:disabled):not(.disabled), 
+.btn:active:not(:disabled):not(.disabled) {
+	background: -webkit-linear-gradient(left, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+    background: linear-gradient(to right, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+}
+
+
+.btn-default::before {
+	background: -webkit-linear-gradient(left, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+	background: linear-gradient(to right, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+}
+
+.btn-border {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.progress-bar {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.roadmap_icon.icon_gradient_box::before {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.gradient_box {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.social_team a:before {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+  	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.newsletter_form .outline_input {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.faq_content .gradient_box {
+    background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%) !important;
+    background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%) !important;
+}
+
+.wpcf7-form input[type="submit"] {
+    background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+    background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.authorize_box input#wp-submit {
+    background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+    background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.comment-form input[type="submit"] {
+    background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+    background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+
+</style>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body data-spy="scroll" data-offset="110" class="home page-template page-template-frontpage page-template-frontpage-php page page-id-378 v_dark wpb-js-composer js-comp-ver-6.7.0 vc_responsive"><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 837.337px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 2083.36px; width: 1414px;"><img class="parallax-slider" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team_bg2.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1686px; width: 1414px; max-width: none; top: -943.87px;"></div><div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 695.475px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 769.2px; width: 1414px;"><img class="parallax-slider" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team_bg2.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1686px; width: 1414px; max-width: none; top: -961.38px;"></div>
+
+<!-- LOADER -->
+<div class="preloader" style="display: none;">
+			<div id="g-spinner" class="loading">
+			<div class="circle c1"></div>
+			<div class="circle c2"></div>
+			<div class="circle c3"></div>
+			<div class="circle c4"></div>
+		</div>
+	</div>
+<!-- END LOADER --> 
+
+<!-- START HEADER -->
+		<header class="header_wrap fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg btco-hover-menu">
+	
+					<a class="navbar-brand" href="https://klbtheme.com/cryptoking/dark/" title="Cryptoking – Bitcoin &amp; ICO Dark">
+				<img src="https://klbtheme.com/cryptoking/wp-content/uploads/2018/05/logo.png" alt="Cryptoking – Bitcoin &amp; ICO Dark">
+			</a>
+		
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		<ul id="main-menu" class="navbar-nav">
+<li class=" nav-item menu-item menu-item-type-post_type menu-item-object-page"><a class="nav-link page-scroll" href="#how-it-works">How it Works</a></li>
+<li class=" nav-item menu-item menu-item-type-post_type menu-item-object-page"><a class="nav-link page-scroll" href="#about">About</a></li>
+<li class=" nav-item menu-item menu-item-type-post_type menu-item-object-page"><a class="nav-link page-scroll" href="#token-2">Token</a></li>
+<li class=" nav-item menu-item menu-item-type-post_type menu-item-object-page"><a class="nav-link page-scroll" href="#road-map">Road Map</a></li>
+<li class=" nav-item menu-item menu-item-type-post_type menu-item-object-page"><a class="nav-link page-scroll" href="#team">Team</a></li>
+<li class=" nav-item menu-item menu-item-type-custom menu-item-object-custom"><a class="nav-link page-scroll" href="#faq">FAQ</a></li>
+
+<li class=" nav-item menu-item menu-item-type-custom menu-item-object-custom"><a class="nav-link page-scroll" href="#contact">Contact</a></li>
+
+
+</ul>		 
+				        <ul class="navbar-nav nav_btn">
+					<li><a class="btn btn-default" href="http://klbtheme.com/cryptoking/login/">Login</a></li>
+					<li><a class="btn btn-default" href="#">Our App</a></li>
+		        </ul>
 				
-				div.row-left-socials {
-				    width: 100%;
-				    height: 75px;
-				    background-color: rgb(0,0,0,0.70);
-				}
-				div.row-right-socials {
-				    width: 100%;
-				    height: auto;
-				    background-color: rgb(0,0,0,0.70);
-				}
-				img.icon {
-				    width: 100px;
-				    height: 100px;
-				}
-				div#header{
-				display: none;
-				}
-						body{
-		font-family: Arial, sans-serif;
-		background-image: url(sfondord.png);
-		background-size: 100%;
-		}
-		button {
-			    width: 400px;
-			    height: 40px;
-			    background-color: white;
-			    border-radius: 5px;
-			    border: black;
-			    color: black;
-			    box-shadow: 5px 5px 5px;
-			    font-size: 2em;
-			}
-		div#audit {
-			    width: 100%;
-			    height: auto;
-			    background-image: url(tokenrevolution.github.io/);
-			    margin-bottom: 50%;
-			  }
-		div#tokenomics {
-				    width: 100%;
-				    height: auto;
-				    margin-bottom: 20px;
-				    background-image: url(tokenrevolution.github.io/);
-				    margin-top: 50%;
-				}
-		.row-left-alt {
-				    height: 435px !important;
-				    width: 100% !important;
-				    background-color: rgb(255 255 255 / 70%) !important;
-				    text-align: center !important;
-				    margin-top: 50% !important;
-				    margin-bottom: 5%;
-			            border-radius: 20px;
-				}
-		.row-left{
-				    width: 100% !important;
-				    height: 500px !important;
-				    background-color: rgb(223 0 22 / 70%) !important;
-				    text-align: center !important;
-			            border-radius: 20px;
-		}
-		.row-right{
-				    height: 450px !important;
-				    width: 100% !important;
-				    text-align: center !important;
-				    margin-top: 25px !important;
-				    background-color: rgb(255 255 255 / 70%) !important;
-			            border-radius: 20px;
-			      
-		}
-		.row-right-alt{
-				    width: 100% !important;
-				    height: 500px !important;
-				    background-color: rgb(223 0 22 / 70%) !important;
-				    text-align: center !important;
-			            border-radius: 20px;
-		}
-		.contenuto{
-		text-align:center;
-		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 30px;
-		color: white;
-		margin-top: -100px;
-		margin-left: 20px;
-		margin-right: 20px;
-		}
-		.contenutoalt{
-		text-align:center;
-		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 30px;
-		color: black;
-		margin-top: -100px;
-		margin-left: 20px;
-		margin-right: 20px;
-		}
-		.contenuto1{
-		text-align:center;
-		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 30px;
-		color: white;
-		margin-left: 20px;
-		margin-right: 20px;
-		}
-		div#countdown{
-		width: 100%;
-		height: auto;
-		background-image: url('');
-		margin-bottom: 60px;
-		padding-top: 150px;
-		/*https://thumbs.dreamstime.com/b/antecedentes-m%C3%A9dicos-cient%C3%ADficos-de-alta-calidad-en-nanotecnolog%C3%ADa-estructura-molecular-ilustraci%C3%B3n-d-la-celda-cristal-202144520.jpg*/
-		}
-		div#home{
-		width: 100%;
-		height: auto;
-		margin-bottom: 20px;
-		background-image: url('');
-		}
-			}
-			div#mylinks{
-			    text-align: center;
-			    overflow: hidden;
-			    background-color: rgba(223, 0, 22, 0.9);
-			    position: relative;
-			    width: 80%;
-			    margin-left: 10%;
-			    display: none;
-			    border-top: 3px solid white; 
-			    border-radius: 20px;
-			}
-  .mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- START HEADER -->
 
-.topnav {
-  overflow: hidden;
-  background-color: #df0016;
-  position: relative;
-  width: 100%;
-  border-radius: 20px;
-}
 
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 10px;
-    height: auto;
-    width: auto;
-}
-
-#nav a:hover {
-  background-color: '';
-  color: black;
-}
-
-.active {
-  background-color: red;
-  color: white;
-}
-			
-
-		div#header{
-		width: 100%;
-		height: 90px;
-		background-color: rgb(223 0 22 / 1);
-		padding-top: 45px;
-		margin-bottom: 20px;
-		border-radius: 20px;
-		}
-		div#whitepaper{
-		width: 100%;
-		height: auto;
-			margin-bottom: 20px;
-			background-image: url('');
-			background-repeat: no-repeat;
-		/*<!--https://elysiumpost.com/wp-content/uploads/2020/12/nanotecnologia.png*/
-		}
-		div#tokenomics{
-		width: 100%;
-		height: auto;
-			margin-bottom: 20px;
-				background-image: url('');
-		}
-		div#team{
-		width: 100%;
-		height: auto;
-		background-color:  rgb(223 0 22 / 70%);
-		margin-bottom: 150px;
-		border-radius: 20px;
-		}
-		div#roadmap{
-		width: 100%;
-		height: auto;
-		margin-top: -100px;
-		background-color: rgb(223 0 22 / 70%);
-		margin-bottom: 10px;
-		border-radius: 20px;
-		}
-		div#footer{
-		width: 100%;
-		height: 100px;
-		background-color: rgb(223 0 22 / 1);
-		text-align: center;
-		padding-top: 50px;
-		border-radius: 20px 20px 0px 0px;
-			}
-		.row-superior{
-				    height: 500px;
-				    width: 100%;
-				    text-align: center;
-		}
-		@media only screen and (min-width: 1001px) {
-		.row-left{
-				    width: 60%;
-				    height: 500px;
-				    background-color: rgb(223 0 22 / 70%);
-				    text-align: center;
-				    float:left;
-			            border-radius: 20px;
-		 
-		}
-		.row-right{
-					height: 450px;
-				    width: 40%;
-				    text-align: center;
-					margin-top: 25px;
-					background-color: rgb(255 255 255 / 70%);
-				    float:left;
-				    border-radius: 20px;
-			      
-		}
-		.row-left-alt{
-				    height: 435px;
-				    width: 40%;
-				    background-color: rgb(255 255 255 / 70%);
-				    text-align: center;
-				    margin-top: 25px;		
-				    padding-top: 30px;
-				    float:left;
-				    border-radius: 20px;
-			}
-		.row-right-alt{
-				    width: 60%;
-				    height: 500px;
-				    background-color: rgb(223 0 22 / 70%);
-				    text-align: center;
-			            float:left;
-			            border-radius: 20px;
-		}
-		.contenuto{
-		text-align:center;
-		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 25px;
-		color: white;
-		margin-top: -100px;
-		margin-left: 20px;
-		margin-right: 20px;
-		}
-		.contenutoalt{
-		text-align:center;
-		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 25px;
-		color: black;
-		margin-top: -100px;
-		margin-left: 20px;
-		margin-right: 20px;
-		}
-		.contenuto1{
-		text-align:center;
-		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 25px;
-		color: white;
-		margin-left: 20px;
-		margin-right: 20px;
-		}
-		div#countdown{
-		width: 100%;
-		height: 350px;
-		background-image: url('');
-		margin-bottom: 60px;
-		padding-top: 150px;
-		/*https://thumbs.dreamstime.com/b/antecedentes-m%C3%A9dicos-cient%C3%ADficos-de-alta-calidad-en-nanotecnolog%C3%ADa-estructura-molecular-ilustraci%C3%B3n-d-la-celda-cristal-202144520.jpg*/
-		}
-		div#home{
-		width: 100%;
-		height: auto;
-		margin-bottom: 20px;
-		background-image: url('');
-		}
-		div#audit{
-		width: 100%;
-		height: auto;
-		margin-bottom: 20px;
-		background-image: url('');
-		}
-			}
-		.row-left-menu{
-		}
-		.row-right-menu{
-		}
-		.team{
-					width:19.8%;
-					height:325px;
-					background-color: #a3663699;
-					margin-left: 1.5px;
-					margin-top:	10px;
-			                border-radius: 20px;
-		}
-		div.clock-right{
-							margin-top: 0px;
-							width: 100%;
-							height: 350px;
-							background-color: rgb(223 0 22 / 70%);
-							float:left;
-							border-radius: 20px;
-							}
-		div.clock-left{
-						width: 20%;
-						height:350;
-						}
-		ul#menu li {
-						float: left; /* elementi su singola riga */
-						list-decoration: none;
+	<section id="home">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528456393705{padding-top: 200px !important;padding-bottom: 50px !important;}.vc_custom_1528456393705{padding-top: 100px !important;padding-bottom: 100px !important;}.vc_custom_1527852578734{margin-top: 30px !important;}</style>		<style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528456393705{padding-top: 100px !important;padding-bottom: 100px !important;}
 					}
-		ul#menu li a{
-				    color: #fff;
-				    display: block;
-				    font-weight: bold;
-				    line-height: 30px;
-				    text-decoration: none;
-				    width: auto;
-				    height: 30px;
-				    text-align: center;
-				    margin: 2em;
-				    margin-top: -0.5em;
-					}
-			ul#menu {
-			list-style: none;
-			font-size: 1em;
-			text-transform: uppercase;
-			}
-		div#menu0{
-		margin-left:20%;
-		}
-		h1{
-		color: white;
-		text-align: center;
-		}
-		h2{
-		color: #034694;
-		text-align: center;
-		}
-		p.line{
-		color: white;
-		font-size: 120px;
-		margin-top: -80px;
-		}
-		p.line-out{
-		color: white;
-		font-size: 120px;
-		margin-top: -80px;
-		text-align: center;
-		margin-bottom: -10px;
-		}
-		div#logo{
-		margin-left: 50px;
-		}
-			button{
-		width: 400px;
-		height: 40px;
-		background-color: white;
-		border-radius: 5px;
-		border: black;
-		color: black;
-		box-shadow: 5px 5px 5px;
-		}
-		#clockdiv{
-						font-family: sans-serif;
-						color: black;
-						display: inline-block;
-						font-weight: 100;
-						text-align: center;
-						font-size: 100px;
-					}
-
-					#clockdiv > div{
-						padding: 10px;
-						border-radius: 3px;
-						background: rgb(223 0 22 / 1);
-						display: inline-block;
-					}
-
-					#clockdiv div > span{
-						padding: 15px;
-						border-radius: 3px;
-						background: white;
-						display: inline-block;
-					}
-
-					.smalltext{
-						padding-top: 5px;
-						font-size: 30px;
-					}
-					
-					.timeline {
-							  position: relative;
-							  width: 100%;
-							  max-width: 1140px;
-							  margin: 0 auto;
-							  padding: 15px 0;
-							}
-
-							.timeline::after {
-							  content: '';
-							  position: absolute;
-							  width: 5px;
-							  background: white;
-							  top: 0;
-							  bottom: 0;
-							  left: 50%;
-							  margin-left: -1px;
-							}
-
-							.container {
-							  position: relative;
-							  background: inherit;
-							  width: 50%;
-							}
-
-							.container.left {
-							  left: 0;
-							}
-
-							.container.right {
-							  left: 50%;
-							}
-
-							.container::after {
-							       content: '';
-							    position: absolute;
-							    width: 10px;
-							    height: 15px;
-							    top: calc(50% - 8px);
-							    right: -8px;
-							    background: #ffffff;
-							    border: 2px solid white;
-							    border-radius: 16px;
-							    z-index: 1;
-							}
-
-							.container.right::after {
-							  left: -6px;
-							}
-
-							.container::before {
-							     content: '';
-							    position: absolute;
-							    width: 50px;
-							    height: 5px;
-							    top: calc(50% - 1px);
-							    right: 6px;
-							    background: white;
-							    z-index: 1;
-							}
-
-							.container.right::before {
-							  left: 8px;
-							}
-
-							.container .date {
-							     position: absolute;
-							    display: inline-block;
-							    top: calc(50% - 8px);
-							    font-size: 25px;
-							    font-weight: bold;
-							    color: white;
-							    text-transform: uppercase;
-							    letter-spacing: 6px;
-							    z-index: 1;
-							}
-
-							.container.left .date {
-							     right: -150px;
-							}
-
-							.container.right .date {
-							     left: -150px;
-							}
-
-							.container .icon {
-							   position: absolute;
-							    display: inline-block;
-							    width: 20px;
-							    height: 40px;
-							    padding: 0px 0;
-							    top: calc(50% - 20px);
-							    background: #F6D155;
-							    border: 4px solid #034694;
-							    border-radius: 40px;
-							    text-align: center;
-							    font-size: 15px;
-							    color: white;
-							    z-index: 1;
-							}
-
-							.container.left .icon {
-							  right: 56px;
-							}
-
-							.container.right .icon {
-							  left: 56px;
-							}
-
-							.container .content {
-							  padding: 30px 90px 30px 30px;
-							  background: #F6D155;
-							  position: relative;
-							  border-radius: 0 500px 500px 0;
-							}
-
-							.container.right .content {
-							  padding: 30px 30px 30px 90px;
-							  border-radius: 500px 0 0 500px;
-							}
-
-							.container .content h2 {
-							  margin: 0 0 10px 0;
-							  font-size: 20px;
-							  font-weight: bold;
-							  color: #034694;
-							}
-
-							.container .content p {
-							  margin: 0;
-							  font-size: 16px;
-							  line-height: 22px;
-							  color: #000000;
-							}
-
-							@media (max-width: 767.98px) {
-							  .timeline::after {
-							    left: 90px;
-							  }
-
-							  .container {
-							    width: 100%;
-							    padding-left: 120px;
-							    padding-right: 30px;
-							  }
-
-							  .container.right {
-							    left: 0%;
-							  }
-
-							  .container.left::after, 
-							  .container.right::after {
-							    left: 82px;
-							  }
-
-							  .container.left::before,
-							  .container.right::before {
-							    left: 100px;
-							    border-color: transparent #006E51 transparent transparent;
-							  }
-
-							  .container.left .date,
-							  .container.right .date {
-							    right: auto;
-							    left: 15px;
-							  }
-
-							  .container.left .icon,
-							  .container.right .icon {
-							    right: auto;
-							    left: 146px;
-							  }
-
-							  .container.left .content,
-							  .container.right .content {
-							    padding: 30px 30px 30px 90px;
-							    border-radius: 500px 0 0 500px;
-							  }
-							}
-			h3{
-			align: center;
-			color:white;
-			}
-			div#social{
-			width: 100%;
-			height: auto;
-			background-color: rgb(0,0,0,0,80);
-				div#socials{
-				float:left;
-				}
-			}
-			div.row-superior.socials{
-			width: 100%;
-			heigth: 60px;
-			background-color = rgb(0,0,0,0.70)
-			}
-			ul#socials li{
-				list-decoration: none;
-				float: left;
-				margin-right: 20px;
-			}
-			ul#socials {
-			list-style: none;
-			}
-				}
-			ul#nav {
-			list-style: none;
-			}
-			ul#nav li{
-			font-size: 1em;
-    			margin-bottom: 1em;
-			}
-			ul#nav li a{
-			color: white;
-    			text-decoration: none;
-			font-size: 2 em;
-			}
-			label#progress {
-				    font-size: 1rem;
-				}
-
-	</style>
-	</head>
-	<body>
-	<!--/* Start header-->
-		<div id="header">
-					<div id="logo" style="float:left;">
-						<img src="https://sc04.alicdn.com/kf/HTB1jQ9KRXXXXXc3XXXX760XFXXXk.png" style="width: 130px;margin-top: -43px;margin-left: 10px;">
-					</div>
-			
-					<div id="menu0">
-						 <ul id="menu">
-							<li><a href="#home">Home</a></li>
-							<li><a href="#whitepaper">WhitePaper</a></li>
-							<li><a href="#tokenomics">Tokenomics</a></li>
-							<li><a href="#audit">Audit</a></li>
-							<li><a href="#team">Team</a></li>
-							<li><a href="#roadMap">RoadMap</a></li>
-							<li><a href="#">Join To Presale</a></li>
-			</ul></div>
-		</div>
-	<!--*/end header-->
-			
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <div style="
-"><img src="https://sc04.alicdn.com/kf/HTB1jQ9KRXXXXXc3XXXX760XFXXXk.png" style="width: 10%;margin-left: 45%;">
-	
-	
-
-	    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" width="50px" height="50px">
- 	 </a>
-</div>	
-</div>
-  <div id="myLinks" style="text-align: center; display: none;">
-	  <ul id="nav" style="list-style: none;">
-							<li><a style="font-size: 2em;" href="#fome">Home</a>
-							</li><li><a style="font-size: 2em;" href="#whitepaper">WhitePaper</a>
-							</li><li><a style="font-size: 2em;" href="#tokenomics">Tokenomics</a>
-							</li><li><a style="font-size: 2em;" href="#audit">Audit</a>
-							</li><li><a style="font-size: 2em;" href="#team">Team</a>
-							</li><li><a style="font-size: 2em;" href="#roadMap">RoadMap</a>
-							</li><li><a style="font-size: 2em;" href="#">Join To Presale</a>
-							</li><li><a href=""><img class="icon" src="https://it.seaicons.com/wp-content/uploads/2015/06/Facebook-icon4.png"></a>
-							<a href=""><img class="icon" src="https://cdn.icon-icons.com/icons2/1584/PNG/128/3721672-instagram_108066.png"></a>
-							<a href=""><img class="icon" src="https://it.seaicons.com/wp-content/uploads/2015/06/twitter-icon.png"></a></li>
-	  </ul>
+				</style><div class="klb-bg" style="background-image: linear-gradient(to bottom, #000000 10%, #0c0e29 100%);"><div id="banner_bg_effect" class="banner_effect"><canvas class="particles-js-canvas-el" width="1767" height="868" style="width: 100%; height: 100%;"></canvas></div><div class="container"><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1528456393705 vc_row-o-content-middle vc_row-flex klb_xs_vc_custom_1528456393705" style="position: relative; left: -121.8px; box-sizing: border-box; width: 1414px; padding-left: 121.8px; padding-right: 122.2px;"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="banner_text"><h1><span>Nanotecna</span> Landing Page</h1><h3>Start Bitcoin mining today!</h3><p>The highest paying Bitcoin mining pool and cloud mining provider on the market. Start mining Bitcoin today!</p><div class="banner_btn"><a class="btn btn-default page-scroll nav-link" href="#sample-page-6" target="" title="WhitePaper">WhitePaper <i class="ion-ios-arrow-thin-right"></i></a> <a class="btn btn-border " href="#" target="" title="But Token Now">But Token Now <i class="ion-ios-arrow-thin-right"></i></a> </div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1527852578734 "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left   banner_image_right">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="678" height="526" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/banner_vector2.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/banner_vector2.png 678w, https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/banner_vector2-300x233.png 300w" sizes="(max-width: 678px) 100vw, 678px"></div>
+		</figure>
 	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div></div></div>
+	</section> 
+    
+   
+	<section id="how-it-works">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528408920649{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1528408920650{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1528408382778{margin-bottom: 30px !important;}</style>		<style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528408920650{padding-top: 50px !important;padding-bottom: 50px !important;}
+					}
+				</style><div class="container"><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="1" data-parallax="scroll" data-image-src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team_bg2.png" class="vc_row wpb_row vc_row-fluid vc_custom_1528408920649 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc_general vc_parallax vc_parallax-content-moving klb_xs_vc_custom_1528408920650" style="position: relative; left: -121.8px; box-sizing: border-box; width: 1414px; padding-left: 121.8px; padding-right: 122.2px;"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-5 vc_col-md-5"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="title_light text-left"><span></span><h2>How It Works</h2></div>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1528408382778">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">Bitcoin Mining is a peer-to-peer computer process used to secure and verify bitcoin transactions—ayments from one user to another on a decentralized network.Mining involves adding bitcoin transaction data to Bitcoin’s global public ledger of past transactions.</span></p>
 
-<!-- End smartphone / tablet look -->
+		</div>
+	</div>
+<div class="klb-button " style="display:inline-block;"><a class="kulebe btn btn-default" href="#" target="" title="DOWNLOAD APP">DOWNLOAD APP <i class="ion-ios-arrow-thin-right"></i></a></div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-7"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="klb work_box"><div class="box_inner"> <i class="ion-person-add"></i><h4>Create Account</h4><p>Bitcoin Core, however, is a full node, meaning it helps verify and transmit other Bitcoin transactions across the network and stores copy of the entire blockchain.</p></div></div><div class="klb work_box"><div class="box_inner"> <i class="ion-android-cart"></i><h4>Buy &amp; Sell</h4><p>Blockchain works with exchange partners all around the world to make buying bitcoin in your wallet both a seamless and secure experience.</p></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="klb work_box"><div class="box_inner"> <i class="ion-ios-locked"></i><h4>Safe &amp; Secure</h4><p>We take careful measures to ensure that your bitcoin is as safe as possible. Offline storage provides an important security measure against theft or loss.</p></div></div></div></div></div></div></div></div></div><div class="vc_parallax-inner skrollable skrollable-between" data-bottom-top="top: 0%;" data-top-bottom="top: 0%;" style="height: 100%; top: 0%;"></div></div><div class="vc_row-full-width vc_clearfix"></div></div><div class="shape shap5"></div>
+	</section> 
+    
+   
+	<section id="about">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528408852730{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1528408852731{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1527979656877{margin-bottom: 50px !important;padding-top: 100px !important;}.vc_custom_1527979656880{margin-bottom: 15px !important;padding-top: 50px !important;}.vc_custom_1527851059570{margin-bottom: 30px !important;}</style>		<style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528408852731{padding-top: 50px !important;padding-bottom: 50px !important;}
+					}
+				</style><div class="container"><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1528408852730 vc_row-o-content-middle vc_row-flex klb_xs_vc_custom_1528408852731" style="position: relative; left: -121.8px; box-sizing: border-box; width: 1414px; padding-left: 121.8px; padding-right: 122.2px;"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner  "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="594" height="468" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/05/about_img.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/05/about_img.png 594w, https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/05/about_img-300x236.png 300w" sizes="(max-width: 594px) 100vw, 594px"></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="title_light text-left"><span>WHAT IS Nanotecna</span><h2>About The Nanotecna</h2></div>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1527851059570">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">A cryptocurrency is a digital or virtual currency designed to work as a medium of exchange. It uses cryptography to secure and verify transactions as well as to control the creation of new units of a particular cryptocurrency.</span></p>
+<p><span style="color: #ffffff;">Essentially, cryptocurrencies are limited entries in a database that no one can change unless specific conditions are fulfilled.</span></p>
+
+		</div>
+	</div>
+<div class="klb-button " style="display:inline-block;"><a class="kulebe btn btn-default" href="#" target="" title="LET'S START">LET'S START <i class="ion-ios-arrow-thin-right"></i></a></div> </div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979656880{margin-bottom: 15px !important;padding-top: 50px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1527979656877 klb_xs_vc_custom_1527979656880"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="title_light text-center"><span>WHY Nanotecna</span><h2>Competitive Benefit</h2></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #ffffff;">Competitive advantages are conditions that allow a company or country to produce a good or service at equal value but at a lower price or in a more desirable fashion</span></p>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="benefit_box text-center"><img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/secure.png" alt="Safe &amp; Secure"><h6>Safe &amp; Secure</h6></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="benefit_box text-center"><img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/token.png" alt="Excerpt Tokens"><h6>Excerpt Tokens</h6></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="benefit_box text-center"><img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/payment.png" alt="Easy Payment"><h6>Easy Payment</h6></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="benefit_box text-center"><img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/case.png" alt="Daily Cash Outs"><h6>Daily Cash Outs</h6></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="benefit_box text-center"><img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/app.png" alt="Smart Application"><h6>Smart Application</h6></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="benefit_box text-center"><img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/secure.png" alt="NO DILUTION"><h6>NO DILUTION</h6></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div></div>
+	</section> 
+    
+   
+	<section id="token-2">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528409030662{padding-top: 50px !important;}.vc_custom_1528409030664{padding-top: 50px !important;}.vc_custom_1528409113257{padding-bottom: 50px !important;}.vc_custom_1528409113258{padding-bottom: 50px !important;}.vc_custom_1527979802874{margin-top: 35px !important;}.vc_custom_1527979854513{padding-top: 100px !important;}.vc_custom_1527979854516{padding-top: 50px !important;}.vc_custom_1527869321597{margin-top: 30px !important;}.vc_custom_1527979882855{padding-top: 100px !important;}.vc_custom_1527979882859{padding-top: 50px !important;}.vc_custom_1527869327816{margin-top: 30px !important;}</style>		<p><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528409030664{padding-top: 50px !important;}
+					}
+				</style></p><div class="container"><div class="vc_row wpb_row vc_row-fluid vc_custom_1528409030662 klb_xs_vc_custom_1528409030664"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-7"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="title_light text-left"><span>TOKENS</span><h2>Pricing &amp; Values</h2></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="pr_box"><h6>STARTING TIME :</h6><p>APRIL 23, 2018 (MONDAY 9:00 AM)</p></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="pr_box"><h6>ENDING TIME :</h6><p>JUNE 18, 2018 (MONDAY 11:00 PM)</p></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="pr_box"><h6>MARKET CAPS :</h6><p>$ 118.23 (BILLION)</p></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="pr_box"><h6>LOW - HIGH 24H :</h6><p>$ 6,455.83 - $ 7,071.42</p></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="pr_box"><h6>AVAILABLE TOKEN :</h6><p>$ 120 (BILLION)</p></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="pr_box"><h6>ACCEPTABLE CURRENCY :</h6><p>BTC, ETH, LTC</p></div></div></div></div></div></div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979802874{margin-top: 35px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-5 vc_col-md-5"><div class="vc_column-inner  klb_xs_vc_custom_1527979802874"><div class="wpb_wrapper"><div class="title_light text-left"><span>START IN</span><h2>ICO Is On Live NOW!</h2></div><div class="type2 tk_countdown text-center"><div class="banner_text tk_counter_inner"><div class="tk_countdown_time" data-time="2022/02/09 00:00:00"><span class="counter_box"><span class="tk_counter days">00 </span><span class="tk_text">Days</span></span><span class="counter_box"><span class="tk_counter hours">00</span><span class="tk_text">Hours</span></span><span class="counter_box"><span class="tk_counter minutes">00</span><span class="tk_text">Minutes</span></span><span class="counter_box"><span class="tk_counter seconds">00</span><span class="tk_text">Seconds</span></span></div><a href="#" title="Buy Token Now" target="" class="btn btn-default">Buy Token Now <i class="ion-ios-arrow-thin-right"></i></a></div></div></div></div></div></div></div><div class="container"><div class="vc_row wpb_row vc_row-fluid vc_row-o-content-middle vc_row-flex "><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979854516{padding-top: 50px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1527979854513 klb_xs_vc_custom_1527979854516"><div class="wpb_wrapper"><div class="title_light text-center"><span></span><h2>Token Sale Proceeds</h2></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-7"><div class="vc_column-inner  "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="509" height="357" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/sale-proceeds.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/sale-proceeds.png 509w, https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/sale-proceeds-300x210.png 300w" sizes="(max-width: 509px) 100vw, 509px"></div>
+		</figure>
+	</div>
+</div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527869321597{margin-top: 30px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner  klb_xs_vc_custom_1527869321597"><div class="wpb_wrapper"><ul class="list_none chart_list"><li class="color1">Interconnection Dev.</li><li class="color2">Marketing &amp; General</li><li class="color3">Mobile Ad Platform</li><li class="color4">Ad Platform Integration</li><li class="color5">Operational Overhead</li></ul></div></div></div></div></div><div class="shape shap5"></div><div class="shape shap6"></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528409113258{padding-bottom: 50px !important;}
+					}
+				</style><div class="container"><div class="vc_row wpb_row vc_row-fluid vc_custom_1528409113257 vc_row-o-content-middle vc_row-flex klb_xs_vc_custom_1528409113258"><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979882859{padding-top: 50px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1527979882855 klb_xs_vc_custom_1527979882859"><div class="wpb_wrapper"><div class="title_light text-center"><span></span><h2>Token Distribution</h2></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner  "><div class="wpb_wrapper"><ul class="list_none chart_list"><li class="color1">Interconnection Dev.</li><li class="color2">Marketing &amp; General</li><li class="color3">Mobile Ad Platform</li><li class="color4">Ad Platform Integration</li><li class="color5">Operational Overhead</li></ul></div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527869327816{margin-top: 30px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-7"><div class="vc_column-inner  klb_xs_vc_custom_1527869327816"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="509" height="357" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/token-distribution.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/token-distribution.png 509w, https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/token-distribution-300x210.png 300w" sizes="(max-width: 509px) 100vw, 509px"></div>
+		</figure>
+	</div>
+</div></div></div></div></div>
+	</section> 
+    
+   
+	<section id="road-map">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528409178512{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1528409178514{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1527859616027{margin-bottom: 30px !important;}.vc_custom_1527859616029{margin-bottom: 20px !important;}.vc_custom_1527868989895{padding-bottom: 50px !important;}.vc_custom_1527868989898{padding-bottom: 80px !important;}.vc_custom_1527868982493{margin-top: 50px !important;}.vc_custom_1527868982496{margin-bottom: 30px !important;}.vc_custom_1527868585036{margin-bottom: 20px !important;}</style>		<style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528409178514{padding-top: 50px !important;padding-bottom: 50px !important;}
+					}
+				</style><div class="container"><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1528409178512 vc_row-o-content-middle vc_row-flex klb_xs_vc_custom_1528409178514" style="position: relative; left: -121.8px; box-sizing: border-box; width: 1414px; padding-left: 121.8px; padding-right: 122.2px;"><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527859616029{margin-bottom: 20px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8"><div class="vc_column-inner vc_custom_1527859616027 klb_xs_vc_custom_1527859616029"><div class="wpb_wrapper"><div class="title_light text-center"><span>ROAD MAP</span><h2>Cryptoking Timeline</h2></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #ffffff;">Cryptominded is a curated directory of the best cryptocurrency resources. We’re slowly transforming the website into the best place for beginners to learn about cryptocurrencies</span></p>
+
+		</div>
+	</div>
+</div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527868989898{padding-bottom: 80px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1527868989895 klb_xs_vc_custom_1527868989898"><div class="wpb_wrapper"><div class="roadmap owl-carousel small_space owl-loaded owl-drag"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1872px;"><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item"><div class="roadmap_box rd_complete"><div class="roadmap_inner"><div class="roadmap_icon icon_gradient_box"></div><h6>April 2018</h6><p>Inotial Coin Distribution &amp; maketing</p></div></div></div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item"><div class="roadmap_box rd_complete"><div class="roadmap_inner"><div class="roadmap_icon icon_gradient_box"></div><h6>February 2018</h6><p>Exchange Bitcontent to Bitcoin</p></div></div></div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item"><div class="roadmap_box "><div class="roadmap_inner"><div class="roadmap_icon icon_gradient_box"></div><h6>March 2018</h6><p>BTCC mode of payment in Bitconcent</p></div></div></div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item"><div class="roadmap_box "><div class="roadmap_inner"><div class="roadmap_icon icon_gradient_box"></div><h6>June 2018</h6><p>Send-Receive coin Bitconcent &amp; mobile</p></div></div></div></div><div class="owl-item active" style="width: 204px; margin-right: 30px;"><div class="item"><div class="roadmap_box "><div class="roadmap_inner"><div class="roadmap_icon icon_gradient_box"></div><h6>October 2018</h6><p>Coin Marketcap, World Coin Index</p></div></div></div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item"><div class="roadmap_box "><div class="roadmap_inner"><div class="roadmap_icon icon_gradient_box"></div><h6>December 2018</h6><p>Buy &amp; Sell Bitconcent Coin</p></div></div></div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item"><div class="roadmap_box "><div class="roadmap_inner"><div class="roadmap_icon icon_gradient_box"></div><h6>December 2018</h6><p>Deposit Bitcoin from your account</p></div></div></div></div><div class="owl-item" style="width: 204px; margin-right: 30px;"><div class="item"><div class="roadmap_box "><div class="roadmap_inner"><div class="roadmap_icon icon_gradient_box"></div><h6>December 2018</h6><p>Exchange Bitcontent to Bitcoin</p></div></div></div></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><i class="ion-ios-arrow-back"></i></div><div class="owl-next"><i class="ion-ios-arrow-forward"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="title_light text-left"><span>CRYPTOKING APP</span><h2>Download Mobile App</h2></div>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1527868585036">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">The Cryptoking very own app is available to download for your iPhone or Android™ device! … Now Download the new mobile app, and get the most out of your membership with special tools designed to enhance your experience.</span></p>
+<p><span style="color: #ffffff;">Download the Cryptoking new mobile app, and get the most out of your membership with special tools designed to enhance your experience.</span></p>
+
+		</div>
+	</div>
+<div class="klb-button " style="display:inline-block;"><a class="kulebe btn btn-default" href="#" target="" title="Google Store"><span class="ion-social-android"></span>Google Store <i class="ion-ios-arrow-thin-right"></i></a></div> <div class="klb-button " style="display:inline-block;"><a class="kulebe btn btn-default" href="#" target="" title="Apple Store"><span class="ion-social-apple"></span>Apple Store <i class="ion-ios-arrow-thin-right"></i></a></div> </div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527868982496{margin-bottom: 30px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1527868982493 klb_xs_vc_custom_1527868982496"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="289" height="586" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/mobile.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/mobile.png 289w, https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/mobile-148x300.png 148w" sizes="(max-width: 289px) 100vw, 289px"></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div></div>
+	</section> 
+    
+   
+	<section id="team">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528409319712{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1528409319713{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1527935811696{margin-bottom: 50px !important;}.vc_custom_1527935811699{margin-bottom: 15px !important;}.vc_custom_1527979110583{padding-top: 70px !important;}.vc_custom_1527979110587{padding-top: 20px !important;}.vc_custom_1527980324028{margin-bottom: 50px !important;padding-top: 70px !important;}.vc_custom_1527980324032{margin-bottom: 15px !important;padding-top: 50px !important;}.vc_custom_1527979058126{margin-bottom: 30px !important;}.vc_custom_1527979063402{margin-bottom: 30px !important;}.vc_custom_1527979067871{margin-bottom: 30px !important;}.vc_custom_1527979072384{margin-bottom: 30px !important;}.vc_custom_1527978591058{margin-bottom: 30px !important;}.vc_custom_1527978596577{margin-bottom: 30px !important;}</style>		<style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528409319713{padding-top: 50px !important;padding-bottom: 50px !important;}
+					}
+				</style><div class="container"><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="1.5" data-parallax="scroll" data-image-src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team_bg2.png" class="vc_row wpb_row vc_row-fluid vc_custom_1528409319712 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving klb_xs_vc_custom_1528409319713" style="position: relative; left: -121.8px; box-sizing: border-box; width: 1414px; padding-left: 121.8px; padding-right: 122.2px;"><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527935811699{margin-bottom: 15px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8"><div class="vc_column-inner vc_custom_1527935811696 klb_xs_vc_custom_1527935811699"><div class="wpb_wrapper"><div class="title_light text-center"><span>OUR CORE TEAM</span><h2>Professional Experts</h2></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #ffffff;">we are proud of our great team.He is one of the most motivated and enthusiastic people we have, and is always ready and willing to help out where needed.</span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1527979058126"><div class="wpb_wrapper"><div class="team_box"><div class="team_img text-center"> <img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-1.jpg" alt="Walter Mark"><div class="social_team list_none"><ul><li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a></li> <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a></li> <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a></li> <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a></li> </ul></div></div><div class="team_info gradient_box text-center"><h4><a href="#team1" class="content-popup">Walter Mark</a></h4><p>Director</p></div><div id="team1" class="team_pop mfp-hide"><div class="row m-0"><div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-1.jpg" alt="Walter Mark"> </div><div class="col-md-6"><div class="pt-3 pb-3"><div class="title_dark"> <span>Director</span><h2>Walter Mark</h2></div><div class="social_single_team list_none"><ul> <li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a> </li>  <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a> </li>  <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a> </li>  <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a> </li> </ul></div><p>Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.</p></div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1527979063402"><div class="wpb_wrapper"><div class="team_box"><div class="team_img text-center"> <img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-2.jpg" alt="Lissa Tero"><div class="social_team list_none"><ul><li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a></li> <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a></li> <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a></li> <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a></li> </ul></div></div><div class="team_info gradient_box text-center"><h4><a href="#team2" class="content-popup">Lissa Tero</a></h4><p>Project Manager</p></div><div id="team2" class="team_pop mfp-hide"><div class="row m-0"><div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-2.jpg" alt="Lissa Tero"> </div><div class="col-md-6"><div class="pt-3 pb-3"><div class="title_dark"> <span>Project Manager</span><h2>Lissa Tero</h2></div><div class="social_single_team list_none"><ul> <li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a> </li>  <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a> </li>  <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a> </li>  <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a> </li> </ul></div><p>Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.</p></div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1527979067871"><div class="wpb_wrapper"><div class="team_box"><div class="team_img text-center"> <img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-3.jpg" alt="Kartik Sef"><div class="social_team list_none"><ul><li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a></li> <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a></li> <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a></li> <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a></li> </ul></div></div><div class="team_info gradient_box text-center"><h4><a href="#team3" class="content-popup">Kartik Sef</a></h4><p>Programmer</p></div><div id="team3" class="team_pop mfp-hide"><div class="row m-0"><div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-3.jpg" alt="Kartik Sef"> </div><div class="col-md-6"><div class="pt-3 pb-3"><div class="title_dark"> <span>Programmer</span><h2>Kartik Sef</h2></div><div class="social_single_team list_none"><ul> <li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a> </li>  <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a> </li>  <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a> </li>  <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a> </li> </ul></div><p>Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.</p></div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1527979072384"><div class="wpb_wrapper"><div class="team_box"><div class="team_img text-center"> <img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-4.jpg" alt="Laura Sandel"><div class="social_team list_none"><ul><li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a></li> <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a></li> <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a></li> <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a></li> </ul></div></div><div class="team_info gradient_box text-center"><h4><a href="#team4" class="content-popup">Laura Sandel</a></h4><p>Market Analysis</p></div><div id="team4" class="team_pop mfp-hide"><div class="row m-0"><div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-4.jpg" alt="Laura Sandel"> </div><div class="col-md-6"><div class="pt-3 pb-3"><div class="title_dark"> <span>Market Analysis</span><h2>Laura Sandel</h2></div><div class="social_single_team list_none"><ul> <li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a> </li>  <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a> </li>  <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a> </li>  <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a> </li> </ul></div><p>Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.</p></div></div></div></div></div></div></div></div></div></div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979110587{padding-top: 20px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10"><div class="vc_column-inner vc_custom_1527979110583 klb_xs_vc_custom_1527979110587"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="title_light text-center"><span></span><h2>advisors</h2></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1527978591058"><div class="wpb_wrapper"><div class="team_box"><div class="team_img text-center"> <img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-5.jpg" alt="Joseph Conrad"><div class="social_team list_none"><ul><li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a></li> <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a></li> <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a></li> <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a></li> </ul></div></div><div class="team_info gradient_box text-center"><h4><a href="#team5" class="content-popup">Joseph Conrad</a></h4><p>Investor</p></div><div id="team5" class="team_pop mfp-hide"><div class="row m-0"><div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-5.jpg" alt="Joseph Conrad"> </div><div class="col-md-6"><div class="pt-3 pb-3"><div class="title_dark"> <span>Investor</span><h2>Joseph Conrad</h2></div><div class="social_single_team list_none"><ul> <li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a> </li>  <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a> </li>  <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a> </li>  <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a> </li> </ul></div><p>Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.</p></div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1527978596577"><div class="wpb_wrapper"><div class="team_box"><div class="team_img text-center"> <img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-6.jpg" alt="Julie Tokar"><div class="social_team list_none"><ul><li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a></li> <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a></li> <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a></li> <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a></li> </ul></div></div><div class="team_info gradient_box text-center"><h4><a href="#team6" class="content-popup">Julie Tokar</a></h4><p>Investor</p></div><div id="team6" class="team_pop mfp-hide"><div class="row m-0"><div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-6.jpg" alt="Julie Tokar"> </div><div class="col-md-6"><div class="pt-3 pb-3"><div class="title_dark"> <span>Investor</span><h2>Julie Tokar</h2></div><div class="social_single_team list_none"><ul> <li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a> </li>  <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a> </li>  <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a> </li>  <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a> </li> </ul></div><p>Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.</p></div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="team_box"><div class="team_img text-center"> <img src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-7.jpg" alt="Sandhya Rani"><div class="social_team list_none"><ul><li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a></li> <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a></li> <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a></li> <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a></li> </ul></div></div><div class="team_info gradient_box text-center"><h4><a href="#team7" class="content-popup">Sandhya Rani</a></h4><p>Investor</p></div><div id="team7" class="team_pop mfp-hide"><div class="row m-0"><div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/team-lg-7.jpg" alt="Sandhya Rani"> </div><div class="col-md-6"><div class="pt-3 pb-3"><div class="title_dark"> <span>Investor</span><h2>Sandhya Rani</h2></div><div class="social_single_team list_none"><ul> <li><a href="https://www.facebook.com/klbtheme" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a> </li>  <li><a href="https://twitter.com/sinanIK" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a> </li>  <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a> </li>  <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a> </li> </ul></div><p>Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.</p></div></div></div></div></div></div></div></div></div></div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527980324032{margin-bottom: 15px !important;padding-top: 50px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8" id="faq"><div class="vc_column-inner vc_custom_1527980324028 klb_xs_vc_custom_1527980324032"><div class="wpb_wrapper"><div class="title_light text-center"><span>FAQS</span><h2>Frequently Asked Questions</h2></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #ffffff;">Frequently asked questions (FAQ) or Questions and Answers (Q&amp;A), are listed questions and answers, all supposed to be commonly asked in some context</span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-color-grey vc_tta-style-classic vc_tta-shape-square vc_tta-o-shape-group vc_tta-gap-10 vc_tta-controls-align-left vc_tta-o-no-fill"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="faq_content vc_tta-panel vc_active" id="1527937802515-563d04d1-761e" data-vc-content=".vc_tta-panel-body"><div class="card"><div class="card-header vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1527937802515-563d04d1-761e" data-vc-accordion="" data-vc-container=".vc_tta-container" class="gradient_box"><span class="vc_tta-title-text">What is cryptocurrency?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">Cryptocurrency is a form of payment that can be exchanged online for goods and services. Many companies have issued their own currencies, often called tokens, and these can be traded specifically for the good or service that the company provides. Think of them as you would arcade tokens or casino chips. You’ll need to exchange real currency for the cryptocurrency to access the good or service.</span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="faq_content vc_tta-panel" id="1527937802567-9502d45e-3159" data-vc-content=".vc_tta-panel-body"><div class="card"><div class="card-header vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1527937802567-9502d45e-3159" data-vc-accordion="" data-vc-container=".vc_tta-container" class="gradient_box"><span class="vc_tta-title-text">Which cryptocurrency is best to buy today?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">Cryptocurrency is a form of payment that can be exchanged online for goods and services. Many companies have issued their own currencies, often called tokens, and these can be traded specifically for the good or service that the company provides. Think of them as you would arcade tokens or casino chips. You’ll need to exchange real currency for the cryptocurrency to access the good or service.</span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="faq_content vc_tta-panel" id="1527942296246-1ef903ee-bf20" data-vc-content=".vc_tta-panel-body"><div class="card"><div class="card-header vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1527942296246-1ef903ee-bf20" data-vc-accordion="" data-vc-container=".vc_tta-container" class="gradient_box"><span class="vc_tta-title-text">How about day trading crypto?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">While profits are possible trading cryptocurrencies, so are losses. My first year involved me spending hundreds of hours trading Bitcoin with a result of losing over $5,000 with nothing to show for it. Simply trading digital currencies is very similar to gambling because no one really knows what is going to happen next although anyone can guess! While I was lucky to do nothing expect lose money when I started, the worst thing that can happen is to get lucky right away and get a big ego about what an amazing cryptocurrency trader we are.</span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="faq_content vc_tta-panel" id="1527942335654-25e4a905-af89" data-vc-content=".vc_tta-panel-body"><div class="card"><div class="card-header vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left"><a href="#1527942335654-25e4a905-af89" data-vc-accordion="" data-vc-container=".vc_tta-container" class="gradient_box"><span class="vc_tta-title-text">When to sell a cryptocurrency?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">Before Steem I was all in an another altcoin and really excited about it. When I first bought the price was low and made payments to me every week just for holding it. As I tried to participate in the community over the next several months, I was consistently met with a mix of excitement and hostility. When I began talking openly about this, the negative emotions won over in the community and in me. Originally I had invested and been happy to hold no matter what the price which quickly went up after I bought it.</span></p>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div></div></div></div><div class="vc_parallax-inner skrollable skrollable-before" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; top: -50%;"></div></div><div class="vc_row-full-width vc_clearfix"></div></div><div class="shape shap5"></div><div class="shape shap6"></div>
+	</section> 
+    
+   
+	<section id="whitepaper">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528410284367{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1528410284369{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1527979422699{margin-top: 30px !important;}.vc_custom_1527956274361{padding-top: 100px !important;padding-bottom: 30px !important;}.vc_custom_1527956274364{padding-top: 50px !important;padding-bottom: 20px !important;}.vc_custom_1527950730024{margin-bottom: 20px !important;}</style>		<style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528410284369{padding-top: 50px !important;padding-bottom: 50px !important;}
+					}
+				</style><div class="container"><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1528410284367 klb_xs_vc_custom_1528410284369" style="position: relative; left: -121.8px; box-sizing: border-box; width: 1414px; padding-left: 121.8px; padding-right: 122.2px;"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-7 vc_col-md-7"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="title_light text-left"><span></span><h2>Download Whitepaper</h2></div>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1527950730024">
+		<div class="wpb_wrapper">
+			<p><span style="color: #ffffff;">A white paper is an authoritative report or guide that informs readers concisely about a complex issue and presents the issuing body’s philosophy on the matter. It is meant to help readers understand an issue, solve a problem, or make a decision.</span></p>
+<p><span style="color: #ffffff;">Marketers create whitepapers to educate their audience about a particular issue, or explain and promote a particular methodology.</span></p>
+
+		</div>
+	</div>
+<div class="klb-button " style="display:inline-block;"><a class="kulebe btn btn-default" href="#" target="" title="Download Now" download=""><span class="ion-android-download"></span>Download Now <i class="ion-ios-arrow-thin-right"></i></a></div> </div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979422699{margin-top: 30px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-4 vc_col-md-offset-1 vc_col-md-4"><div class="vc_column-inner  klb_xs_vc_custom_1527979422699"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="361" height="396" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/whitepaper.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/whitepaper.png 361w, https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/whitepaper-273x300.png 273w" sizes="(max-width: 361px) 100vw, 361px"></div>
+		</figure>
+	</div>
+</div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527956274364{padding-top: 50px !important;padding-bottom: 20px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8" id="contact"><div class="vc_column-inner vc_custom_1527956274361 klb_xs_vc_custom_1527956274364"><div class="wpb_wrapper"><div class="title_light text-center"><span>CONTACT US</span><h2>Get In Touch!</h2></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-7 vc_col-lg-offset-1 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-6 vc_col-sm-offset-0"><div class="vc_column-inner  "><div class="wpb_wrapper"><div role="form" class="wpcf7" id="wpcf7-f18-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/cryptoking/dark/#wpcf7-f18-o1" method="post" class="wpcf7-form init form_field" novalidate="novalidate" data-status="init">
+<div class="row"><div style="display: none;">
+<input type="hidden" name="_wpcf7" value="18">
+<input type="hidden" name="_wpcf7_version" value="5.5.2">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f18-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+</div><div class="form-group col-md-6"><p><label><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Your Name *"></span></label></p></div><div class="form-group col-md-6"><p><label><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Your Email *"></span> </label></p></div><div class="form-group col-md-12"><p><label><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Subject"></span> </label></p></div><div class="form-group col-md-12"><p><label><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea form-control" aria-invalid="false" placeholder="Your Message"></textarea></span> </label></p></div><div class="klbsubmit col-md-12"><input type="submit" value="Submit" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-default"></div><div class="wpcf7-response-output" aria-hidden="true"></div></div>
 
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+
+
+<p><span class="wpcf7-spinner"></span></p>
+</form></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner  "><div class="wpb_wrapper"><ul class="list_none contact_info mt-margin"><li class="input-group-prepend align-items-center"><i class="ion-ios-location"></i><div class="contact_detail"><span>ADDRESS</span><p>22 International Division Via G.B. Pirelli</p></div></li><li class="input-group-prepend align-items-center"><i class="ion-android-call"></i><div class="contact_detail"><span>PHONE</span><p>+23 0123 4567</p></div></li><li class="input-group-prepend align-items-center"><i class="ion-ios-email"></i><div class="contact_detail"><span>EMAIL</span><p>yourmail@klbtheme.com</p></div></li></ul></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div></div>
+	</section> 
+    
+   
+	<section id="clients">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528456970515{padding-top: 100px !important;padding-bottom: 100px !important;background-color: #080b1f !important;}.vc_custom_1528456970516{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1527978053184{margin-bottom: 20px !important;}.vc_custom_1527978053186{margin-bottom: 10px !important;}.vc_custom_1527979164738{margin-bottom: 10px !important;}.vc_custom_1527979180891{margin-bottom: 10px !important;}.vc_custom_1527979190700{margin-bottom: 10px !important;}.vc_custom_1527979234996{margin-bottom: 10px !important;}</style>		<style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528456970516{padding-top: 50px !important;padding-bottom: 50px !important;}
+					}
+				</style><div class="container"><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1528456970515 vc_row-has-fill vc_row-o-content-middle vc_row-flex klb_xs_vc_custom_1528456970516" style="position: relative; left: -121.8px; box-sizing: border-box; width: 1414px; padding-left: 121.8px; padding-right: 122.2px;"><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527978053186{margin-bottom: 10px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1527978053184 klb_xs_vc_custom_1527978053186"><div class="wpb_wrapper"><div class="title_light text-center"><span>PARTNERS</span><h2>Our Clients</h2></div></div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979164738{margin-bottom: 10px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  klb_xs_vc_custom_1527979164738"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="158" height="47" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/light_client_logo1.png" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
+		</figure>
+	</div>
+</div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979180891{margin-bottom: 10px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  klb_xs_vc_custom_1527979180891"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="155" height="58" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/light_client_logo2.png" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
+		</figure>
+	</div>
+</div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979190700{margin-bottom: 10px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  klb_xs_vc_custom_1527979190700"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="152" height="43" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/light_client_logo3.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/light_client_logo3.png 152w, https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/light_client_logo3-150x43.png 150w" sizes="(max-width: 152px) 100vw, 152px"></div>
+		</figure>
+	</div>
+</div></div></div><style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row .klb_xs_vc_custom_1527979234996{margin-bottom: 10px !important;}
+					}
+				</style><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  klb_xs_vc_custom_1527979234996"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="155" height="77" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/light_client_logo4.png" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="162" height="47" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/light_client_logo5.png" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-2 vc_col-xs-6"><div class="vc_column-inner  "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="163" height="50" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/06/light_client_logo6.png" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div></div><div class="rounded_shape light_rounded_shape3"></div>
+	</section> 
+    
+   
+	<section id="subscribe">
+		   <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1528457273803{border-top-width: 1px !important;padding-top: 100px !important;padding-bottom: 100px !important;background-color: #080b1f !important;border-top-color: #393c4c !important;border-top-style: solid !important;}.vc_custom_1528457273803{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1528032545690{margin-top: 30px !important;}</style>		<style> 
+					@media (max-width: 767px) and (min-width: 320px){
+						.vc_row.klb_xs_vc_custom_1528457273803{padding-top: 50px !important;padding-bottom: 50px !important;}
+					}
+				</style><div class="container"><div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1528457273803 vc_row-has-fill klb_xs_vc_custom_1528457273803" style="position: relative; left: -121.8px; box-sizing: border-box; width: 1414px; padding-left: 121.8px; padding-right: 122.2px;"><div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-3 vc_col-md-6 vc_col-sm-offset-2 vc_col-xs-12"><div class="vc_column-inner  "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="223" height="51" src="https://klbtheme.com/cryptoking/dark/wp-content/uploads/sites/4/2018/05/logo.png" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-3 vc_col-md-6 vc_col-sm-offset-2 vc_col-xs-12"><div class="vc_column-inner  "><div class="wpb_wrapper"><div class="newsletter_form large_space text-center"><h4 class="footer_title" style="color:#ffffff">Subscribe Our Newsletter</h4><script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><!-- Mailchimp for WordPress v4.8.6 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-333" method="post" data-id="333" data-name="Cryptoking Subscribe"><div class="mc4wp-form-fields">
+<div class="outline_input">
+	<input type="email" name="EMAIL" placeholder="Your email address" required="">
+</div>
+<button type="submit" title="Subscribe" class="btn btn-default" name="submit">
+<span class="ion-android-send"></span>Subscribe <i class="ion-ios-arrow-thin-right"></i>
+</button></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1644583930"><input type="hidden" name="_mc4wp_form_id" value="333"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-3 vc_col-md-6 vc_col-sm-offset-2 vc_col-xs-12"><div class="vc_column-inner vc_custom_1528032545690 "><div class="wpb_wrapper"><ul class="list_none footer_social text-center"><li><a href="https://www.facebook.com/klbtheme/" target="_blank" title="facebook"><i class="ion-social-facebook"></i></a></li> <li><a href="#" target="_blank" title="twitter"><i class="ion-social-twitter"></i></a></li> <li><a href="#" target="_blank" title="googleplus"><i class="ion-social-googleplus"></i></a></li> <li><a href="#" target="_blank" title="youtube"><i class="ion-social-youtube"></i></a></li> <li><a href="#" target="_blank" title="instagram"><i class="ion-social-instagram-outline"></i></a></li> </ul></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div></div><div class="rounded_shape light_rounded_shape4"></div>
+	</section> 
+    
+    
+<!-- START FOOTER SECTION --> 
+<footer>
+    <div class="bottom_footer">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-6">
+                	<p class="copyright">
+													Copyright 2020.KlbTheme . All rights reserved											</p>
+                </div>
+                <div class="col-md-6">
+					<ul id="menu-footer-menu" class="list_none footer_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Terms &amp; Conditions</a></li>
+</ul>                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER SECTION --> 
+
+	<a href="#" class="scrollup btn-default animation animated zoomIn" data-animation="zoomIn" data-animation-delay="0.1s" style="animation-delay: 0.1s; visibility: visible; display: none;"><i class="ion-ios-arrow-up"></i></a> 
+
+	<script>(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
 }
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+})();</script><script type="text/html" id="wpb-modifications"></script><link rel="stylesheet" id="js_composer_front-css" href="https://klbtheme.com/cryptoking/dark/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.7.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_tta_style-css" href="https://klbtheme.com/cryptoking/dark/wp-content/plugins/js_composer/assets/css/js_composer_tta.min.css?ver=6.7.0" type="text/css" media="all">
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/klbtheme.com\/cryptoking\/dark\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
 </script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.2" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/bootstrap/js/bootstrap.min.js?ver=1.0" id="bootstrap-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/owlcarousel/js/owl.carousel.min.js?ver=1.0" id="owl-carousel-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/magnific-popup.min.js?ver=1.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/waypoints.min.js?ver=1.0" id="waypoints-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/parallax.js?ver=1.0" id="parallax-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/scripts.js?ver=1.0" id="cryptoking-scripts-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-includes/js/wp-embed.min.js?ver=5.8.1" id="wp-embed-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/custom/cryptoking_sticky.js?ver=1.0" id="cryptoking-sticky-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.7.0" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/particles.min.js?ver=1.0" id="particles-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/custom/cryptoking_particle.js?ver=1.0" id="cryptoking-particle-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=6.7.0" id="vc_jquery_skrollr_js-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/jquery.countdown.min.js?ver=1.0" id="countdown-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/custom/cryptoking_countdown.js?ver=1.0" id="cryptoking-countdown-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/themes/cryptoking/assets/js/custom/cryptoking_roadmap.js?ver=1.0" id="cryptoking-roadmap-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/plugins/js_composer/assets/lib/vc_accordion/vc-accordion.min.js?ver=6.7.0" id="vc_accordion_script-js"></script>
+<script type="text/javascript" src="https://klbtheme.com/cryptoking/dark/wp-content/plugins/js_composer/assets/lib/vc-tta-autoplay/vc-tta-autoplay.min.js?ver=6.7.0" id="vc_tta_autoplay_script-js"></script>
+<script type="text/javascript" defer="" src="https://klbtheme.com/cryptoking/dark/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.8.6" id="mc4wp-forms-api-js"></script>
 
-			
-	<!--*/start countdown-->
-	<div id="countdown" class="fade-in-animation">
-		<div class="row-superior">
-				<div class="clock-right fade-in" style="
-">
-				<h1 id="h1">Countdown Clock:</h1>
-				<br>
-						<p class="contenuto1 fade-in-animationtext"> 
-							Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-				<br>	
-				<br>
-					
-					<div id="clockdiv" class="clock fade-in-animationtext">
-					  <div style="border-radius: 20px;">
-						<span class="days">14</span>
-						<div class="smalltext">Days</div>
-					  </div>
-					  <div style="border-radius: 20px;">
-						<span class="hours">23</span>
-						<div class="smalltext">Hours</div>
-					  </div>
-					  <div style="border-radius: 20px;">
-						<span class="minutes">52</span>
-						<div class="smalltext">Minutes</div>
-					  </div>
-					  <div style="border-radius: 20px;">
-						<span class="seconds">56</span>
-						<div class="smalltext">Seconds</div>
-					  </div>
-					</div>
-					<script>
-					
-
-  function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
-					</script>
-				</div>
-		</div>
-	</div>
-	<!--*/end countdown-->
-	<!--*/progress bar-->
-		<div id="progresso" class="fade-in-animation" style="
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    background: rgb(223 0 22 / 70%);
-    border-radius: 20px;
-    padding: 5%;
-">
-<div id="interno-destra">
-						<label id="progress" for="file" style="
-			    color: white;
-			    font-variant: petite-caps;
-			    font-size: 2em;
-			">Raised fund</label>
-						<br>
-						<progress id="file" max="100" value="70" style="
-			    margin-bottom: 2%;
-			    margin-top: 5%;
-			    width: 80%;
-			    height: 2%;"> 70% </progress>
-						<br>
-						<h1>Total Found: € 3.000.000</h1>
-						<br>
-						<h1>Raised Found: € 2.100.000</h1>
-						<br>
-						<h1>Found Left: € 900.000</h1>
-						<br>
-						<Button>Join to Pre-sales</Button>
-</div>
-<div id="interno-sinistra">
-	<h1> How to Buy LegnanoCoin </h1>
-</div>
-			</div>
-	<!--*/end progresbar -->
-	<br>
-	<br>
-	<!--*/start home-->
-	<div id="home" class="fade-in-animation">
-		<div class="row-superior fade-in">
-			<div class="row-left fade-in">
-			<h1>The project</h1>
-			<p class="line">---</p>
-			<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-			<br>
-			<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-			<br>
-			<button style="
-    animation: 5s ease 0s normal forwards 1 fadein;
-"><b> Telegram </b></button>
-			</div>
-			<div class="row-right fade-in" style="
-    animation: 2s ease 0s normal forwards 1 fadein;
-">
-			<img src="https://sc04.alicdn.com/kf/HTB1jQ9KRXXXXXc3XXXX760XFXXXk.png" style="width: 396px; height:auto; margin-top: 48px;">
-				<div class="contentrow">
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--*/end home-->
-	<br>
-	<br>
-	<!--*/start whitepaper-->
-	<div id="whitepaper" style="
-">
-		<div class="row-superior fade-in-animation">
-			<div class="row-left-alt fade-in">
-			<img src="unnamed-removebg-preview.png" style="width:250px; heigth:290px; margin-bottom: 150px;">
-			<p class="contenutoalt"> A document released by a crypto project that gives investors technical information about its concept</p>
-			</div>
-			<div class="row-right-alt fade-in">
-			<h1>Whitepaper</h1>
-			<p class="line">---</p>
-			<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-			<br>
-			<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-			<br>
-			<button style="
-    animation: 5s cubic-bezier(0.4, 0, 1, 1) 0s normal forwards 1 fadein;
-">White Paper</button>
-			</div>
-		</div>
-	</div>
-	<!--*/end whitepaper-->
-	<br>
-	<br>
-	<!--*/start tokenomics-->
-	<div id="tokenomics" class="fade-in-animation">
-		<div class="row-superior fade-in-animation">
-			<div class="row-left fade-in">
-			<h1>Tokenomics</h1>
-			<p class="line">---</p>
-			<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-			<br>
-			<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-			<br>
-			<button style="
-    animation: 5s ease 0s normal forwards 1 fadein;
-">Tokenomics</button>
-			</div>
-			<div class="row-right fade-in" style="
-    animation: 2s ease 0s normal forwards 1 fadein;
-">
-				<img src="https://docs.solanium.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-MXTV5b4UKirD4lES_W4%2F-MZDd4WenYTTzsB4iHnQ%2F-MZDdYSF8YfQYzmFun6Z%2FPie%20chart.png?alt=media&amp;token=fbae0a26-c3c8-4cdf-ad26-4118199e9888" style="width:385.59px; height:400px;">
-			</div>
-		</div>
-	</div>
-	<!--*/end tokenomics-->
-	<br>
-	<br>
-	<!--*/start audit-->
-	<div id="audit" class="fade-in-animation">
-		<div class="row-superior fade-in-animation">
-			<div class="row-left-alt fade-in" style="
-    animation: 2s ease 0s normal forwards 1 fadein;
-">
-			<img src="2087856_40b0e3fde80ddd71450740d687c4a064-removebg-preview.png" style="width:250px; height: 290px; margin-bottom: 100px;">
-			<p class="contenutoalt">A smart contract audit is an extensive methodical examination and analysis of a smart contract's code that is used to interact with a cryptocurrency or blockchain. </p>
-			</div>
-			<div class="row-right-alt fade-in">
-				<h1>Audit</h1>
-				<p class="line">---</p>
-				<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-			    <br>
-				<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-				<br>
-				<button style="
-    animation: 5s ease 0s normal forwards 1 fadein;
-">Audit</button>
-			</div>
-		</div>
-	</div>
-	<!--*/end audit-->
-	<br>
-	<br>
-	<!--*/start team-->
-	<div id="team" style="
-    animation: 5s ease 0s normal forwards 1 fadein;
-" class="fade-in-animation">
-	<br>
-	<br>
-	<h1>The Team</h1>
-	<p class="line-out">---</p>
-		<div class="row-superior fade-in-animation">
-			<div class="team" style="float:left;">
-			<h1>Tizio</h1>
-			<div class="imgteam">
-			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width:250px; heigth:290px;">
-			</div>
-			<br>
-			<div class="contenuto1 fade-in-animationtext">
-			CEO
-			</div>
-			</div>
-			<div class="team" style="float:left;">
-			<h1>Tizio</h1>
-			<div class="imgteam">
-			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width: 100%; height: 150px;">
-			</div>
-			<br>												 
-			<div class="contenuto1 fade-in-animationtext2">
-			MARKETING CHEF
-			</div>
-			</div>
-			<div class="team" style="float:left;">
-			<h1>Tizio</h1>
-			<div class="imgteam">
-			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width: 100%; height: 150px;">
-			</div>
-			<br>
-			<div class="contenuto1 fade-in-animationtext3">
-			HUMAN RESOURCES
-			</div>
-			</div>
-			<div class="team" style="float:left;">
-			<h1>Tizio</h1>
-			<div class="imgteam">
-			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width: 100%; height: 150px;">
-			</div>
-			<br>												   
-			<div class="contenuto1 fade-in-animationtext4">
-			CTO
-			</div>
-			</div>
-			<div class="team" style="float:left;">
-			<h1>Tizio</h1>
-			<div class="imgteam">
-			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width: 100%; height: 150px;">
-			</div>
-			<br>	
-			<div class="contenuto1 fade-in-animationtext5">
-			SUPPORT
-			</div>
-			</div>
-		</div>
-	</div>
-	<!--*/end team-->
-	<!--*/start roadmap-->
-	<div id="roadmap" style="
-    animation: 10s ease 0s normal forwards 1 fadein;
-" class="class=" fade-in-animation"="">
-	<br>
-	<br>
-	<h1>RoadMap</h1>
-	<p class="line-out">---</p>
-	<div class="timeline fade-in">
-  <div class="container left fade-in">
-    <div class="date fade-in">15 Dec</div>
-    <i class="icon fa fa-home fade-in"></i>
-    <div class="content fade-in">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-      </p>
-    </div>
-  </div>
-  <div class="container right fade-in">
-    <div class="date fade-in">22 Oct</div>
-    <i class="icon fa fa-gift fade-in"></i>
-    <div class="content fade-in">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-      </p>
-    </div>
-  </div>
-  <div class="container left fade-in">
-    <div class="date fade-in">10 Jul</div>
-    <i class="icon fa fa-user fade-in"></i>
-    <div class="content fade-in">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-      </p>
-    </div>
-  </div>
-  <div class="container right fade-in">
-    <div class="date fade-in">18 May</div>
-    <i class="icon fa fa-running fade-in"></i>
-    <div class="content fade-in">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-      </p>
-    </div>
-  </div>
-  <div class="container left fade-in">
-    <div class="date fade-in">10 Feb</div>
-    <i class="icon fa fa-cog fade-in"></i>
-    <div class="content fade-in">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-      </p>
-    </div>
-  </div>
-  <div class="container right fade-in">
-    <div class="date fade-in">01 Jan</div>
-    <i class="icon fa fa-certificate fade-in"></i>
-    <div class="content fade-in">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-      </p>
-    </div>
-  </div>
-</div>
-	</div>
-	<!--*/end roadmap-->
-	<br>
-	<!--*/startfooter-->
-	<div id="footer">
-	<h3>Tkrev-TokenRevolution s.r.l.s-Allright@ Reserved</h3>
-	</div>
-	<!--*/end footer-->
-	<!--social-->
-	<div id="social">
-		<div class="row-superior.socials fade-in-animation">
-			<div class="row-left-socials fade-in" style="float:left;">
-			<h1>Legananocoin@legnanocoin.com</h1>
-			</div>
-			<div class="row-right-socials fade-in" style="float:left;">
-			<div class="contentrow">
-			<ul id="socials">
-				<li><a href=""><img class="icon" src="https://it.seaicons.com/wp-content/uploads/2015/06/Facebook-icon4.png"></a></li>
-				<li><a href=""><img class="icon" src="https://cdn.icon-icons.com/icons2/1584/PNG/128/3721672-instagram_108066.png"></a></li>
-				<li><a href=""><img class="icon" src="https://it.seaicons.com/wp-content/uploads/2015/06/twitter-icon.png"></a></li>
-				<li><a href="privacy.html" style="
-    border: 3px solid #df0016;
-    border-radius: 20px;
-    background: white;
-    color: #df0016;
-    text-decoration: none;
-">Privacy</a></li>
-			</ul>
-			</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-<script>
-
-	// non devi toccare più nulla, solo aggiungere fade-in-animation e fade-in
-	//li dove vuoi attivare le animazioni
-	// per modificare le animazioni vai ad inizio pagina e modifica @keyframes
-		const observer = new IntersectionObserver(entries => {
-  // Loop over the entries
-  entries.forEach(entry => {
-    // If the element is visible
-	if (entry.intersectionRatio > 0) {
-      entry.target.classList.add('fade-in-animation');
-    }
-
-  });
-});
-
-var boxElList  = document.querySelectorAll('.fade-in');
-boxElList.forEach((el) => {
-	observer.observe(el);
-})
-
-			</script>
+	
 </body></html>
